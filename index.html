@@ -166,6 +166,11 @@
                 <a href="#leadership">Leadership</a>
                 <a href="#gallery">Gallery</a>
 
+                <div class="translate-container">
+                    <i class="fas fa-globe translate-icon"></i>
+                    <div id="google_translate_element"></div>
+                </div>
+
                 <a href="#contact" class="nav-cta">Contact Us</a>
             </div>
 
@@ -1024,7 +1029,17 @@
         </div>
     </footer>
 
-
+    <!-- Google Language Translator Integration -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <!-- Custom Script Vetting -->
     <script src="script.js"></script>
